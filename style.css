@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#firstSec {
+    background-color: rgba(35, 35, 35, 1);
+}
+
+#secSec {
+    background-color: white;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+
+header {
+    background-color: rgba(58, 61, 70, 1);
+    height: 66px;
+    width: 100%;
+}
+
+nav {
+    text-align: right;
+}
+
+#one {
+    display: flex;
+    justify-content: space-around;
+}
+
+article, aside {
+    width: 564px;
+    height: 584px;
+    background-color: rgb(29, 30, 30);
+}
+
+.photo1 {
+    grid-row: span 2;
+}
+#two {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+}
+
+#two img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
