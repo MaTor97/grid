@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -45,10 +44,11 @@ header {
 
 nav {
     text-align: right;
+    display: flex; /* Assure que les liens sont alignés horizontalement */
+    align-items: center; /* Centre les liens verticalement */
 }
 
 nav a {
-    height: 14px;
     text-decoration: none;
     line-height: 14px;
     font-size: 14px;
@@ -56,9 +56,30 @@ nav a {
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
     font-family: 'Inter', sans-serif;
-    position: relative;
     margin: 15px;
-    right: 20px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    scale: 1.2;
+}
+
+#home {
+    background-color: rgba(0, 125, 252, 1);
+    border-radius: 4px;
+    width: 64px;
+    height: 30px;
+    display: flex; /* Pour centrer le texte à l'intérieur du bouton */
+    justify-content: center; /* Centrage horizontal du texte */
+    align-items: center; /* Centrage vertical du texte */
+    margin-right: 20px; /* Pour l'espacement à droite si nécessaire */
+}
+
+
+#home:hover {
+    font-weight: 500;
+    border: 1px solid white;
+    scale: 1.2;
 }
 
 #logo {
@@ -172,10 +193,17 @@ p {
     font-weight: 400;
     display: flex;
     justify-content: center; 
-    align-items: center; 
+    align-items: center;
+    transition: 0.2s;
 }
 
 .butt em {
     font-style: normal;
     margin: 0;
+}
+
+.butt:hover {
+    border: 2px solid black;
+    font-weight: 900;
+    scale: 1.2;
 }
